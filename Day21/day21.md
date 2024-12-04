@@ -1,0 +1,1 @@
+# [Day 21 challenge](https://adventofcode.com/2024/day/21)
