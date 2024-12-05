@@ -26,7 +26,7 @@ for i in range(1000):
     cprint(f"List 2 ready: {listInput2}", "light_green")
     inputList1.append(listInput1)
     cprint(inputList1, "blue")
-    inputList1.append(listInput2)
+    inputList2.append(listInput2)
     cprint(inputList2, "red")
 
 inputList1.sort()
