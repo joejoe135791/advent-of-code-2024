@@ -1,12 +1,14 @@
 import os
 import sys
 from termcolor import cprint
+from dotenv import load_dotenv
+load_dotenv()
 os.system('color')
 
 # currentWorkingDirectory = os.getcwd()
 # cprint(f"CWD: {currentWorkingDirectory}", "light_green")
 # currentCorrectDirectory = f"{currentWorkingDirectory}/Day1"
-textFile = f"C:/Users/jandino1921/Downloads/other/advent-of-code-2024/Day1/inputs/input.txt"
+textFile = os.getenv("inputTXTPath")
 cprint(f"text file: {textFile}", "light_green")
 inputList1 = []
 inputList2 =[]
@@ -33,7 +35,16 @@ cprint(inputList1, "blue")
 inputList2.sort()
 cprint(inputList2, "red")
 
+finalNumber = 0
 for z in range(500):
-    pass
+    sortedInputLine1 = inputList1[z]
+    cprint(f"Sorted line 1: {sortedInputLine1}", "light_green")
+    sortedInputLine2 = inputList2[z]
+    cprint(f"Sorted line 2: {sortedInputLine2}", "light_green")
+    sortedInputDifference = sortedInputLine1-sortedInputLine2
+    cprint(f"Difference: {sortedInputDifference}", "light_green")
+    finalNumber += abs(sortedInputDifference)
+
+cprint(f"Final Number: {finalNumber}")
 input("Press Enter to close...")
 sys.exit("Finished, yipee")
