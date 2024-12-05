@@ -27,5 +27,13 @@ for i in range(1000):
     inputList1.append(listInput2)
     cprint(inputList2, "red")
 
+inputList1.sort()
+cprint(inputList1, "blue")
+
+inputList2.sort()
+cprint(inputList2, "red")
+
+for z in range(500):
+    pass
 input("Press Enter to close...")
 sys.exit("Finished, yipee")
