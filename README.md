@@ -1,5 +1,5 @@
 # advent-of-code-2024
-my repo for the advent of code challenge
+my repo for the advent of code challenge, this will contain spoilers
 
 ## Days
 * [Day 1](/Day1/)

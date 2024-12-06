@@ -53,7 +53,5 @@ for z in range(1000):
     
 
 cprint(f"Final Number: {finalNumber}")
-cprint(f"Sorted list 1: {inputList1}", "magenta")
-cprint(f"Sorted list 2: {inputList2}", "red")
 input("Press Enter to close...")
 sys.exit("Finished, yipee")
